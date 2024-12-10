@@ -50,9 +50,12 @@ public class Book {
 		return availability;
 	}
 
+	public void setAvailability(boolean availability) {
+		this.availability = availability;
+	}
+
 	@Override
 	public String toString() {
-		return "books [id=" + id + ", title=" + title + ", author=" + author + ", isbn=" + isbn + ", date=" + date
-				+ ", availability=" + availability + "]";
+		return "ID = " + id + ". The book's title is " + title + ", written by " + author + " with an isbn of " + isbn + " written on " + date + " is it available? " + availability;
 	}
 }

@@ -1,6 +1,7 @@
 package mainBookshop;
 
 public class Reservations {
+	private int id;
 	private Book book;
 	private Customer customer;
 	private String resDate;
@@ -12,8 +13,9 @@ public class Reservations {
 	 * @param resDate
 	 * @param availDate
 	 */
-	public Reservations(Book book, Customer customer, String resDate, String availDate) {
+	public Reservations(int id, Book book, Customer customer, String resDate, String availDate) {
 		super();
+		this.id = id;
 		this.book = book;
 		this.customer = customer;
 		this.resDate = resDate;
@@ -37,7 +39,11 @@ public class Reservations {
 		return availDate;
 	}
 	
-	
+	public int getId() {
+		return id;
+	}
+
+
 	@Override
 	public String toString() {
 		return "Reservations [book=" + book + ", customer=" + customer + ", resDate=" + resDate + ", availDate="

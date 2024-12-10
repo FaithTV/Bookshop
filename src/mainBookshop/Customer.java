@@ -4,14 +4,14 @@ public class Customer {
 	private int id;
 	private String name;
 	private String email;
-	private int phoneNo;
+	private long phoneNo;
 	
 	/**
 	 * @param name
 	 * @param email
 	 * @param phoneNo
 	 */
-	public Customer(int id, String name, String email, int phoneNo) {
+	public Customer(int id, String name, String email, long phoneNo) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -32,13 +32,13 @@ public class Customer {
 		return email;
 	}
 
-	public int getPhoneNo() {
+	public long getPhoneNo() {
 		return phoneNo;
 	}
 	
 
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + "name=" + name + ", email=" + email + ", phoneNo=" + phoneNo + "]";
+		return "Customer [id=" + id + ", name=" + name + ", email=" + email + ", phoneNo=" + phoneNo + "]";
 	}
 }
