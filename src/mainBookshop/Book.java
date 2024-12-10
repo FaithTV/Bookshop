@@ -56,6 +56,6 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "ID = " + id + ". The book's title is " + title + ", written by " + author + " with an isbn of " + isbn + " written on " + date + " is it available? " + availability;
+		return "Book ID = " + id + ". The book's title is " + title + ", written by " + author + ", with an isbn of " + isbn + " and written on " + date + ". It's availability is: " + availability;
 	}
 }

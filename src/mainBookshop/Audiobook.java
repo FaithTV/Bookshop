@@ -14,6 +14,6 @@ public class Audiobook extends Book {
 
     @Override
     public String toString() {
-        return super.toString() + ", Narrator=" + narrator + "]";
+        return super.toString() + ". It's narrator is " + narrator;
     }
 }

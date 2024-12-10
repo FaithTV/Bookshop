@@ -14,6 +14,6 @@ public class Comicbook extends Book {
 
     @Override
     public String toString() {
-        return super.toString() + ", Illustrator=" + illustrator + "]";
+        return super.toString() + ". It's illustrator is " + illustrator;
     }
 }

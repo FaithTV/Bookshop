@@ -46,8 +46,7 @@ public class Reservations {
 
 	@Override
 	public String toString() {
-		return "Reservations [book=" + book + ", customer=" + customer + ", resDate=" + resDate + ", availDate="
-				+ availDate + "]";
+		return "Reservation ID = " + id + ". The book being rented is called " + book.getTitle() + ", ID = " + book.getId() + ". It is being rented out by customer " + customer.getName() + ", ID = " + customer.getId() + ". It was reserved on + " + resDate + ", and will be available on " + availDate;
 	}
 	
 	
